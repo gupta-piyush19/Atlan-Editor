@@ -13,7 +13,7 @@ const Table = () => {
         <h1 className="text-3xl font-bold my-4 uppercase text-gray-500">
           Output
         </h1>
-        <table className="w-full text-center text-sm table-auto border-collapse ">
+        <table className="w-full text-center text-sm table-auto border-collapse mb-6 md:mb-0">
           <thead className="">
             <tr className="">
               <th className="">Order ID</th>

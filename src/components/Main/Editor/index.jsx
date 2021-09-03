@@ -15,7 +15,7 @@ import "codemirror/theme/material-darker.css";
 const Editor = () => {
   const { serveData, query, setQuery, clearData, changeModalState } =
     useContext(queryContext);
-  const [editorTheme, setEditorTheme] = useState("dracula");
+  const [editorTheme, setEditorTheme] = useState("monokai");
   return (
     <div className="">
       <div className="w-full h-full overflow-hidden text-base">
@@ -38,11 +38,11 @@ const Editor = () => {
               onChange={(e) => setEditorTheme(e.target.value)}
             >
               <option disabled>Select Theme</option>
-              <option value="monokai">Monokai</option>
-              <option value="darcula">Darcula</option>
-              <option value="dracula" selected>
-                Dracula
+              <option value="monokai" selected>
+                Monokai
               </option>
+              <option value="darcula">Darcula</option>
+              <option value="dracula">Dracula</option>
               <option value="erlang-dark">Erlang Dark</option>
               <option value="isotope">Isotope</option>
               <option value="material-darker">Material Darker</option>
