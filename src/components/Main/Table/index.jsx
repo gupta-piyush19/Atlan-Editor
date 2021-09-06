@@ -1,5 +1,6 @@
 import { React, useContext } from "react";
 import queryContext from "../../../context/query/queryContext";
+import "react-toastify/dist/ReactToastify.min.css";
 
 const Table = () => {
   let { result } = useContext(queryContext);

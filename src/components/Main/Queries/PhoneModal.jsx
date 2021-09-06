@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import Modal from "react-modal";
 import QueryItem from "./QueryItem";
 
@@ -22,10 +22,6 @@ const PhoneModal = () => {
       transform: "translate(-50%, -50%)",
     },
   };
-
-  function openModal() {
-    changeModalState(true);
-  }
 
   function closeModal() {
     changeModalState(false);

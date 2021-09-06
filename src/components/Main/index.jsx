@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from "react";
+import { ToastContainer } from "react-toastify";
 import Loader from "../Layout/Loader";
-// import Editor from "./Editor";
 import Queries from "./Queries";
 import Table from "./Table";
 const Editor = lazy(() => import("./Editor"));
@@ -14,6 +14,7 @@ const Main = () => {
             <Editor />
           </Suspense>
           <Queries />
+          <ToastContainer />
         </div>
         <div className="w-full overflow-scroll md:w-3/5 px-8 ">
           <Table />

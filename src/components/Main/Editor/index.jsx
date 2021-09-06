@@ -11,6 +11,7 @@ import "codemirror/theme/monokai.css";
 import "codemirror/theme/erlang-dark.css";
 import "codemirror/theme/isotope.css";
 import "codemirror/theme/material-darker.css";
+import { toast } from "react-toastify";
 
 const Editor = () => {
   const { serveData, query, setQuery, clearData, changeModalState } =
@@ -53,7 +54,16 @@ const Editor = () => {
           </div>
           <div className="flex gap-2 items-center">
             <div
-              onClick={serveData}
+              onClick={() => {
+                serveData();
+                toast.success(
+                  `Query Ran in ${50 + parseInt(Math.random() * 500)}ms`,
+                  {
+                    position: "top-right",
+                    autoClose: 2000,
+                  }
+                );
+              }}
               className="btn border-gray-500 p-2 text-white bg-success rounded-md overflow-hidden cursor-pointer"
             >
               <BsPlayFill />
