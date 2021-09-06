@@ -61,6 +61,7 @@ const Editor = () => {
                   {
                     position: "top-right",
                     autoClose: 2000,
+                    progressClassName: "toast-progress-bar",
                   }
                 );
               }}

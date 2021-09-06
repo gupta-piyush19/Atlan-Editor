@@ -127,3 +127,7 @@ table td {
     opacity: 0;
   }
 }
+
+.toast-progress-bar {
+  background: #2026d2 !important;
+}
